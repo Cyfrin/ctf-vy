@@ -1,9 +1,10 @@
 [project]
-name = "moccasin_project"
+name = "ctf-vy"
 version = "0.1.0"
-description = "Add your description here"
+description = "A minimal vyper implementation for creating vyper CTFs"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "mamushi>=0.0.3",
+    "moccasin>=0.3.2",
 ]
