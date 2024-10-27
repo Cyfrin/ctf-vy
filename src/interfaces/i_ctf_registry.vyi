@@ -1,0 +1,15 @@
+"""
+@ version ^0.4.0
+@ title i_ctf_registry Interface
+@ notice Interface for the CTF Registry contract
+"""
+
+
+@external
+def mintNft(receiver: address, twitter_handle: String[100]) -> uint256:
+    ...
+
+
+@external
+def addChallenge(challenge_contract: address) -> address:
+    ...

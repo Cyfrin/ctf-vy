@@ -1,0 +1,40 @@
+"""
+@ version ^0.4.0
+@ title i_challenge Interface
+@ notice Interface for CTF challenge contracts
+@ dev Each implementing contract must have a solveChallenge function, but its
+     signature may vary depending on the specific challenge requirements.
+     The solveChallenge function should call back to the CTFRegistry contract
+     to mint the NFT.
+"""
+
+
+@external
+@view
+def description() -> String[1024]:
+    ...
+
+
+@external
+@view
+def extraDescription(user: address) -> String[1024]:
+    ...
+
+
+@external
+@view
+def attribute() -> String[256]:
+    ...
+
+
+@external
+@view
+def imageUri() -> String[256]:
+    ...
+
+
+# Note: solveChallenge function is not defined in the interface
+# as its signature may vary between implementations
+# def solveChallenge(): ...
+
+
